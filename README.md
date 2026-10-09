@@ -1,16 +1,143 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# CampusConnect 🎓
 
-Currently, two official plugins are available:
+A campus-exclusive student marketplace where students can buy and sell used items within their college community.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Screenshots
 
-## React Compiler
+### 🏠 Home Page
+Browse products listed by students, search for items, and discover available products.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![CampusConnect Home Page](Screenshots/homepage.png)
 
-## Expanding the Oxlint configuration
+### 🛍️ Sell Item Page
+Create product listings with descriptions, prices, categories, conditions, locations, and images.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+![CampusConnect Sell Item Page](Screenshots/sellitempage.png)
+
+### 📦 My Listings Page
+Manage your products, edit or delete listings, and mark items as sold.
+
+![CampusConnect My Listings Page](Screenshots/mylistingpage.png)
+
+## ✨ Features
+
+- Student registration and login
+- Browse and search product listings
+- Sell items with multiple images
+- Filter products
+- Save items for later
+- View and manage your listings
+- Edit and delete listings
+- Mark products as sold
+- View interested buyers
+- Student profile management
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- React
+- Vite
+- Tailwind CSS
+- Axios
+- React Router
+
+**Backend**
+- Python
+- Django
+- Django REST Framework
+- JWT Authentication
+
+**Database**
+- PostgreSQL
+
+## 📂 Project Structure
+
+```text
+CampusConnect/
+├── backend/
+│   ├── config/
+│   ├── manage.py
+│   └── requirements.txt
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+├── Screenshots/
+│   ├── homepage.png
+│   ├── sellitempage.png
+│   └── mylistingpage.png
+└── README.md
+```
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Python
+- Node.js and npm
+- PostgreSQL
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/AbhijithAJ3/CampusConnect.git
+cd CampusConnect
+```
+
+### 2. Set Up the Backend
+
+```bash
+cd backend
+python -m venv venv
+```
+
+Activate the virtual environment on Windows:
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Create a `.env` file in the `backend/` directory and configure your local Django secret key and PostgreSQL database credentials. Do not commit this file.
+
+Run migrations and start Django:
+
+```bash
+python manage.py migrate
+python manage.py runserver
+```
+
+### 3. Set Up the Frontend
+
+Open a new terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open the local URL displayed by Vite in your browser.
+
+## 🔐 Security
+
+- Keep environment variables and secret keys out of Git.
+- Configure your own local database credentials.
+- Never commit passwords or private credentials.
+
+## 👨‍💻 Author
+
+**Abhijith P Anil**
+
+GitHub: [@AbhijithAJ3](https://github.com/AbhijithAJ3)
+
+---
+
+Built to make buying and selling within the campus community easier.
