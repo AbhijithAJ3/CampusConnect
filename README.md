@@ -3,7 +3,7 @@
 
 A campus-exclusive student marketplace where students can buy and sell used items within their college community.
 
-## 📸 Screenshots
+ 
 
 ### 🏠 Home Page
 Browse products listed by students, search for items, and discover available products.
